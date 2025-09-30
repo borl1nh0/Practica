@@ -8,7 +8,16 @@
        
     </head>
     <body>
-       <p>Lista colaboradores<p>
+          <h1>Lista Colaboradores</h1>
+        {% for colaborador in lista_colaboradores %}
+            <li>
+                <strong>Nombre:</strong> {{ colaborador.nombre }} 
+                <strong>Cargo:</strong> {{ colaborador.cargo}} 
+                <p>Fecha: {{ colaborador.fecha_entra_protectora }} </p>
+            </li>
+            <br>
+        {% endfor %}    
+                
         
         
     </body>

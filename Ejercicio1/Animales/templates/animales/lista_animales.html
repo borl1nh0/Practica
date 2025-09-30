@@ -7,8 +7,16 @@
        
     </head>
     <body>
-       <p>Lista animales<p>
-        
-        
+       <h1>Lista animales</h1>
+        {% for animal in lista_animales%}
+            <li>
+                <strong>Nombre:</strong> {{ animal.nombre }} <br>
+                <strong>Especie:</strong> {{ animal.tipo}} <br>
+                <strong>Cuidador</strong> {{ animal.cuidador.username }} <br>
+            </li>
+            <br>
+        {% endfor %}    
+                
+
     </body>
 </html>

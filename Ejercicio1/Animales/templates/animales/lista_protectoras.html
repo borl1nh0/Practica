@@ -9,6 +9,17 @@
     </head>
     <body>
        <p>Lista protectoras<p>
+           <h1>Lista animales</h1>
+
+        {% for protectora in lista_protectoras %}
+            <li>
+                <strong>Nombre:</strong> {{ protectora.nombre }} <br>
+                <strong>Descripcion:</strong> {{ protectora.descripcion}} <br>
+                <strong>Fecha:</strong> {{ protectora.fecha_creacion }} <br>
+            </li>
+            <br>
+        {% endfor %}    
+                
         
         
     </body>
